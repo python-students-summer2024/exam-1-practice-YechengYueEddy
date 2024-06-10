@@ -32,7 +32,7 @@ def bark_with_validation():
   if not dog_name.isalpha() or not len(dog_name) >= 2:
     return print("Name error!")
   dog_age = input("Please enter the age of that dog: ")
-  if not dog_age.isdigit() or not 0 <= int(dog_age) <= 15:
+  if not dog_age.isnumeric() or not 0 <= int(dog_age) <= 15:
     return print("Age error!")
   dog_breed = input("Please enter the breed of that dog: ").capitalize()
   if not dog_breed in ["Schnauzer", "Terrier", "Poodle", "Mastiff"]:

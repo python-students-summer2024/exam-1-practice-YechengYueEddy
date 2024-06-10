@@ -27,7 +27,7 @@ def get_random_int(min_value, max_value):
 def get_guess(max_value):
     user_guess = input(f"Please guess a number between 1 and {max_value}: ")
     random_int = get_random_int(1, max_value)
-    if not user_guess.isdigit() or not 1 <= int(user_guess) <= max_value:
+    if not user_guess.isnumeric() or not 1 <= int(user_guess) <= max_value:
         return -1
     return int(user_guess) == random_int
 
