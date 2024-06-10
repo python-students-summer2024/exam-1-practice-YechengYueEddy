@@ -13,9 +13,10 @@ def main():
   Place code within this main function to call whichever functions you want 
   to try out from the other files where you have written code.
   """
+  play_game()
 
   # for example... the following line will call the bark() function in problem_set_1 whenever this main.py file is run.
-  bark()
+  # bark()
 
 # call the main function
 main()
